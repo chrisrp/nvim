@@ -48,7 +48,14 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"  -- Useful icons used in other plugins
 
   -- colorscheme
-  use { "folke/tokyonight.nvim", tag = "v4.11.0", lazy = false, priority = 1000, lock = true, opts = {}, }
+  use { "folke/tokyonight.nvim", 
+    tag = "v4.11.0", 
+    lazy = false,
+    priority = 1000,
+    lazy = false, 
+    priority = 1000, 
+    lock = true, 
+    opts = {}, }
 
   -- auto completion 
   use { "hrsh7th/nvim-cmp", tag = "v0.0.2", lock = true } -- The completion plugin
