@@ -51,7 +51,6 @@ return packer.startup(function(use)
   use { "folke/tokyonight.nvim", 
     tag = "v4.11.0", 
     lazy = false,
-    priority = 1000,
     lazy = false, 
     priority = 1000, 
     lock = true, 
@@ -80,6 +79,10 @@ return packer.startup(function(use)
 
   -- NvimTree
   use { "kyazdani42/nvim-tree.lua", tag = "v1.9.0", lock = true, }
+
+  -- blink
+  --
+  use { "saghen/blink.cmp", tag = "v1.3.1", lock = true, }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
