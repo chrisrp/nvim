@@ -19,4 +19,3 @@
 -- local cfg = vim.lsp.config.elixirls
 -- vim.lsp.config('elixirls', {
 --    capabilities = require('blink.cmp').get_lsp_capabilities(cfg.capabilities)
-})
