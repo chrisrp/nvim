@@ -48,15 +48,15 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"  -- Useful icons used in other plugins
 
   -- colorscheme
-  use { "folke/tokyonight.nvim", 
-    tag = "v4.11.0", 
+  use { "folke/tokyonight.nvim",
+    tag = "v4.11.0",
     lazy = false,
-    lazy = false, 
-    priority = 1000, 
-    lock = true, 
+    lazy = false,
+    priority = 1000,
+    lock = true,
     opts = {}, }
 
-  -- auto completion 
+  -- auto completion
   use { "hrsh7th/nvim-cmp", tag = "v0.0.2", lock = true } -- The completion plugin
   use { "hrsh7th/cmp-buffer", lock = true }               -- buffer completions
   use { "saadparwaiz1/cmp_luasnip", lock = true }         -- snippet completions
@@ -81,8 +81,15 @@ return packer.startup(function(use)
   use { "kyazdani42/nvim-tree.lua", tag = "v1.9.0", lock = true, }
 
   -- blink
-  --
   use { "saghen/blink.cmp", tag = "v1.3.1", lock = true, }
+
+  -- autopairs
+  -- use { "windwp/nvim-autopairs", event = "InsertEnter", config = function() require("nvim-autopairs").setup {} end }
+
+  -- ToogleTerm
+  -- use { "akinsho/toggleterm.nvim", tag = "v2.13.0" }
+
+  -- use { "kylechui/nvim-surround", tag = "*" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
