@@ -34,6 +34,3 @@ vim.opt.wildignore = {                    --ignore patterns
   '*/deps/*',
   '*.zip'
 }
-
-
-
