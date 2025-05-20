@@ -22,3 +22,6 @@ capabilities = blink.get_lsp_capabilities(capabilities)
 
 vim.lsp.config('elixirls', capabilities)
 vim.lsp.enable('elixirls')
+
+vim.lsp.config('luals', capabilities)
+vim.lsp.enable('luals')
