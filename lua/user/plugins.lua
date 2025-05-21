@@ -51,7 +51,6 @@ return packer.startup(function(use)
   use { "folke/tokyonight.nvim",
     tag = "v4.11.0",
     lazy = false,
-    lazy = false,
     priority = 1000,
     lock = true,
     opts = {}, }
@@ -82,6 +81,8 @@ return packer.startup(function(use)
 
   -- blink
   use { "saghen/blink.cmp", tag = "v1.3.1", lock = true, }
+
+  use { "ThePrimeagen/vim-be-good" }
 
   -- autopairs
   -- use { "windwp/nvim-autopairs", event = "InsertEnter", config = function() require("nvim-autopairs").setup {} end }
