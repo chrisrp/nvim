@@ -8,7 +8,10 @@ vim.opt.autoindent = true                 -- auto indent when adding a new line 
 vim.opt.smartindent = true                -- auto indent when adding a new line
 vim.opt.linespace = 4                     -- Number of pixel lines inserted between characters
 vim.opt.history = 50                      -- Scroll up command history
+
 vim.opt.number = true                     -- Line number
+vim.opt.relativenumber = true
+
 vim.opt.wrap = true                       -- Break if line too long
 vim.opt.showbreak = "..."                 -- Used when wrapping
 vim.opt.cmdheight = 2                     -- more space in the neovim command line for displaying messages
