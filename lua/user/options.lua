@@ -10,7 +10,7 @@ vim.opt.linespace = 4                     -- Number of pixel lines inserted betw
 vim.opt.history = 50                      -- Scroll up command history
 
 vim.opt.number = true                     -- Line number
-vim.opt.relativenumber = true
+vim.opt.relativenumber = true             -- show relative numbers :D
 
 vim.opt.wrap = true                       -- Break if line too long
 vim.opt.showbreak = "..."                 -- Used when wrapping

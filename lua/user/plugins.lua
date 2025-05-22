@@ -82,6 +82,8 @@ return packer.startup(function(use)
   -- blink
   use { "saghen/blink.cmp", tag = "v1.3.1", lock = true, }
 
+  use { "ThePrimeagen/vim-be-good" }
+
   -- autopairs
   -- use { "windwp/nvim-autopairs", event = "InsertEnter", config = function() require("nvim-autopairs").setup {} end }
 
