@@ -15,5 +15,7 @@ ls.add_snippets("elixir", {
       i(1, "add_here_weird_thing")
     })),
 
-  s("if", { t('if ('), i(1), t('), do: '), i(2), })
+  s("if", { t('if ('), i(1), t('), do: '), i(2), }),
+
+  s("wtpipe", { t('|> IO.inspect()') })
 })
