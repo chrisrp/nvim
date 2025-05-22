@@ -19,7 +19,7 @@ keymap('n', 'ss', '<C-w>s', {desc = 'Save vertical', silent = true})
 keymap('n', '<leader>e', ':Lex 30<CR>', opts)
 
 -- formats json
-keymap("n", "<leader>f", ":%!jq .<CR>", opts)
+keymap("n", "<leader>j", ":%!jq .<CR>", opts)
 
 -- resize with arrows
 keymap("n", "<C-k>", ":resize +2<CR>", opts)
@@ -35,15 +35,15 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<C-f>', builtin.live_grep, { desc = 'Telescope live grep' })
 
--- local m = require("user.user_functions")
---
--- vim.keymap.set('n', '<C-x>', function ()
---     m.line_test()
--- end, { desc = 'run test based on line number' })
---
--- vim.keymap.set('n', '<C-c>', function ()
---     m.complete_test()
--- end, { desc = 'run complete test file' })
+-- terminal maps
+local m = require("user.user_functions")
+vim.keymap.set('n', "<leader>x", function ()
+    m.line_test()
+end, { desc = 'run test based on line number' })
+
+vim.keymap.set('n', "<leader>f", function ()
+    m.complete_test()
+end, { desc = 'run complete test file' })
 
 -- waits for 1s between keys (needed for nvim-surround to work)
 vim.o.timeoutlen = 1000
