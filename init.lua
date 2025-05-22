@@ -2,6 +2,7 @@ require("user.options")
 require("user.keymaps")
 require("user.plugins")
 require("user.colorscheme")
+require("user.luasnips")
 -- TODO: remove what is not necessary anymore
 -- require("user.cmp")
 -- require("user.lsp")
