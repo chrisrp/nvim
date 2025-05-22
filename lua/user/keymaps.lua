@@ -35,23 +35,6 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<C-f>', builtin.live_grep, { desc = 'Telescope live grep' })
 
--- luasnips
--- TODO: Descomentar qdo instalar snips
--- local ls = require("luasnip")
-
--- vim.keymap.set({'i', 's'}, '<C-;>', function ()
---   if ls.expand_or_jumpable() then
---     ls.expand_or_jump()
---   end
--- end, { silent = true })
---
--- vim.keymap.set({'i', 's'}, '<C-,>', function ()
---   if ls.jumpable(-1) then
---     ls.jump(-1)
---   end
--- end, { silent = true })
-
-
 -- local m = require("user.user_functions")
 --
 -- vim.keymap.set('n', '<C-x>', function ()

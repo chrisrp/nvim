@@ -51,7 +51,6 @@ return packer.startup(function(use)
   use { "folke/tokyonight.nvim",
     tag = "v4.11.0",
     lazy = false,
-    lazy = false,
     priority = 1000,
     lock = true,
     opts = {}, }
