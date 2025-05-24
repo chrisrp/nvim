@@ -86,7 +86,7 @@ return packer.startup(function(use)
   -- use { "windwp/nvim-autopairs", event = "InsertEnter", config = function() require("nvim-autopairs").setup {} end }
 
   -- ToogleTerm
-  -- use { "akinsho/toggleterm.nvim", tag = "v2.13.0" }
+  use { "akinsho/toggleterm.nvim", tag = "v2.13.0" }
 
   -- use { "kylechui/nvim-surround", tag = "*" }
 
