@@ -55,20 +55,11 @@ return packer.startup(function(use)
     lock = true,
     opts = {}, }
 
-  -- auto completion
-  use { "hrsh7th/nvim-cmp", tag = "v0.0.2", lock = true } -- The completion plugin
-  use { "hrsh7th/cmp-buffer", lock = true }               -- buffer completions
-  use { "saadparwaiz1/cmp_luasnip", lock = true }         -- snippet completions
-  use { "hrsh7th/cmp-nvim-lsp", lock = true }
-
  --snippet engine
   use { "L3MON4D3/LuaSnip", tag = "v2.4.0", lock = true }
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/mason.nvim"           -- simple to use language server installer
-  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
-  use 'jose-elias-alvarez/null-ls.nvim'   -- LSP diagnostics and code actions
 
   -- telescope
   use { "nvim-telescope/telescope.nvim", tag = "0.1.8", lock = true, }
@@ -79,6 +70,7 @@ return packer.startup(function(use)
   -- NvimTree
   use { "kyazdani42/nvim-tree.lua", tag = "v1.9.0", lock = true, }
 
+  -- auto completion
   -- blink
   use { "saghen/blink.cmp", tag = "v1.3.1", lock = true, }
 

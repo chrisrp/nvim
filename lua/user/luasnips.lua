@@ -16,4 +16,6 @@ ls.add_snippets("elixir", {
     })),
   s("watpipe", { t('|> IO.inspect()') }),
   s("if", { t('if ('), i(1), t('), do: '), i(2), }),
+
+  s("pipe", { t('|> ') }),
 })
