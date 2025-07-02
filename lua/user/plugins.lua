@@ -80,6 +80,9 @@ return packer.startup(function(use)
   -- ToogleTerm
   use { "akinsho/toggleterm.nvim", tag = "v2.13.0" }
 
+  -- copilot
+  use { "github/copilot.vim" }
+
   -- use { "kylechui/nvim-surround", tag = "*" }
 
   -- Automatically set up your configuration after cloning packer.nvim
