@@ -9,5 +9,5 @@ require("user.telescope")
 require("user.treesitter")
 require("user.nvim-tree")
 require("user.blink")
-
 require("user.toogle_term")
+require("user.copilot")
